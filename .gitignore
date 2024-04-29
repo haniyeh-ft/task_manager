@@ -1,0 +1,5 @@
+# Environments
+venv_taskmanager
+
+db.sqlite3
+taskmanager/__pycache__/
