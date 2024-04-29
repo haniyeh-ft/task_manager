@@ -2,4 +2,5 @@
 venv_taskmanager
 
 db.sqlite3
-taskmanager/__pycache__/
+*/__pycache__/
+tasks/migrations/__pycache__/
