@@ -1,0 +1,6 @@
+# Environments
+venv_taskmanager
+
+db.sqlite3
+*/__pycache__/
+tasks/migrations/__pycache__/
