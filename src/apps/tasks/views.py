@@ -1,11 +1,13 @@
 from rest_framework import viewsets
-from .models import Tasks
+from .models import Task
 from .serializers import TasksSerializer, UserSerializer
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 
 class TasksViewSet(viewsets.ModelViewSet):
-    queryset = Tasks.objects.all()
+    queryset = Task.objects.all()
     serializer_class = TasksSerializer
 
 
