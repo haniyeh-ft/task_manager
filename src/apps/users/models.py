@@ -20,6 +20,7 @@ class CustomUserManager(BaseUserManager):
         return user
 
     def create_superuser(self, phone_number, password=None, **extra_fields):
+        print("********* in create_superuser")
         extra_fields.setdefault("is_staff", True)
         extra_fields.setdefault("is_superuser", True)
 
@@ -57,4 +58,4 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = CustomUserManager()
 
     USERNAME_FIELD = "phone_number"
-    REQUIRED_FIELDS = [""]
+    REQUIRED_FIELDS = []
