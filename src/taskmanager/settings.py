@@ -140,14 +140,14 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework.authentication.SessionAuthentication",
     ],
-    "DEFAULT_PERMISSION_CLASSES":[
+    "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.IsAuthenticatedOrReadOnly"
     ],
 }
 
 SPECTACULAR_SETTINGS = {
     "TITLE": "Task Manager API",
-    "DESCRIPTION": "Your project description",
+    "DESCRIPTION": "Task Manager API: An API for managing tasks efficiently within your organization or project.",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
     # OTHER SETTINGS
