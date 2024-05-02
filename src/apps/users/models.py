@@ -58,3 +58,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     USERNAME_FIELD = "phone_number"
     REQUIRED_FIELDS = []
+
+    def __str__(self) -> str:
+        return f"{self.phone_number} - {self.username}"
