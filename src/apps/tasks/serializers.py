@@ -7,6 +7,5 @@ class TasksSerializer(serializers.ModelSerializer):
     class Meta:
         model = Task
         fields = "__all__"
-        # fileds = ["id" , "title" , "description"]
 
 
